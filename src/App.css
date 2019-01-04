@@ -1,0 +1,325 @@
+
+.App {
+
+	text-align: center;
+	font-family: 'Oxygen';
+	font-weight: 700;
+	transition: 0.1s;
+
+	--green: #01B050;
+	--pale-green: #73d096;
+	--red: #b01501;
+	--pale-red: #d07c73;
+	--purple: #A701B0;
+	--pale-purple: #BC73D0;
+	--grey: #D9D9D9;
+	--light-grey: #E9E9E9;
+	--dark-grey: #B7B7B7;
+	--pale-black: #888888;
+	--blue: #2A01B0;
+	--pink: #A701B0;
+	--tan: #B06D01;
+	--yellow: #B0AA01;
+
+	--text: 'Oxygen';
+	--titles: 'Varela Round';
+
+}
+
+a {
+	text-decoration: none !important;
+}
+
+body {
+	background: var(--light-grey);
+	font-size: calc(5px + (26 - 14) * ((100vw - 300px) / (1600 - 300)));
+	line-height: calc(1.8em + (1.5 - 1.2) * ((100vw - 300px) / (1600 - 300)));
+}
+
+::-webkit-scrollbar { 
+    display: none; 
+}
+
+.textlink {
+	display: inline-block;
+	padding: 0.2em 0.3em;
+	line-height: 1em;
+	color: var(--green) !important;
+	cursor: pointer;
+	border: 0.1em solid var(--green);
+	border-radius: 100px 100px;
+}
+
+.textlink:hover {
+	color: white !important;
+	background: var(--green);
+}
+
+textarea:focus {
+	outline: none;
+}
+
+button:focus {
+	outline: none;
+}
+
+input:focus {
+	outline: none;
+}
+
+.material-icons {
+	font-size: inherit;
+	vertical-align: middle;
+}
+
+
+/* ICONS */
+
+.fa {
+	vertical-align: middle;
+}
+
+.fa-bullhorn {
+	transform: translate(0, -0.1em);
+}
+
+.fa-reply {
+	transform: translate(0, 0.1em);
+}
+
+.fa-cut {
+	transform: rotate(180deg);
+}
+
+
+
+
+.icon-panel {
+	display: flex;
+	height: 80vh;
+	padding-top: 10%;
+  	align-items: center;
+	padding-bottom: 8%;
+}
+
+.compass {
+	position: absolute;
+	left: 11%;
+	width: 78%;
+}
+
+.icon {
+	position: absolute;
+	display: block;
+	left: 32.5%;
+	width: 35%;
+	animation: compassrotation 10s infinite ease-in-out;
+}
+
+@keyframes compassrotation {
+	0% {
+		transform: rotate(-2.0deg);
+	}
+	10% {
+		transform: rotate(1.0deg);
+	}
+	20% {
+		transform: rotate(-1.5deg);
+	}
+	30% {
+		transform: rotate(0.0deg);
+	}
+	40% {
+		transform: rotate(-1.5deg);
+	}
+	50% {
+		transform: rotate(2.0deg);
+	}
+	60% {
+		transform: rotate(-1.0deg);
+	}
+	70% {
+		transform: rotate(0.5deg);
+	}
+	80% {
+		transform: rotate(0.0deg);
+	}
+	90% {
+		transform: rotate(1.5deg);
+	}
+	100% {
+		transform: rotate(-2.0deg);
+	}
+}
+
+.main-panel {
+	display: flex;
+	height: 80vh;
+	padding-top: 10%;
+  	align-items: center;
+	padding-bottom: 8%;
+}
+
+.logo {
+	position: relative;
+	width: 76%;
+	left: 0%;
+	margin-bottom: 6%;
+}
+
+.def-button {
+	display: block;
+	margin: auto;
+	margin-top: 4%;
+	height: 7%;
+	min-width: 40%;
+	padding-left: 5%;
+	padding-right: 5%;
+	border: 2px solid;
+	border-radius: 500px 500px;
+	background: white;
+	cursor: pointer;
+	font-size: 110%;
+	font-family: var(--titles);
+	letter-spacing: .1em;
+	line-height: 2.0em;
+	white-space: nowrap;
+}
+
+.def-button:hover {
+	transition-property: color, background;
+	transition-duration: 0.4s;
+}
+
+.green-button {
+	border-color: var(--green);
+	color: var(--green);
+}
+
+.green-button:hover {
+	background: var(--green);
+	color: white;
+}
+
+.red-button {
+	border-color: var(--red);
+	color: var(--red);
+}
+
+.red-button:hover {
+	background: var(--red);
+	color: white;
+}
+
+.grey-button {
+	display: inline-block;
+	position: relative;
+	margin-left: 2%;
+	margin-right: 2%;
+	border-color: var(--grey);
+	color: var(--grey);
+	cursor: not-allowed;
+}
+
+.back-button {
+	margin-top: 12%;
+}
+
+
+
+.soc-button {
+	display: inline-block;
+	font-size: 150%;
+	width: 2em;
+	height: 2em;
+	line-height: 1em;
+	padding: 0.5em;
+	margin: 1% 2%;
+	border: 2px solid var(--green);
+	border-radius: 100%;
+	cursor: pointer;
+}
+
+.soc-facebook {
+	color: #3B5998 !important;
+}
+
+.soc-twitter {
+	color: #1DA1F2 !important;
+}
+
+.soc-telegram {
+	color: #0088CC !important;
+}
+
+.soc-linkedin {
+	color: #0077B5 !important;
+}
+
+.fa-twitter {
+	font-size: 105%;
+	transform: translate(-0.03em, -0.05em);
+}
+
+.fa-paper-plane {
+	font-size: 85%;
+	transform: translate(-0.08em, -0.15em);
+}
+
+.fa-facebook {
+	transform: translate(-0.02em, -0.07em);
+}
+
+.fa-linkedin {
+	transform: translate(0.02em, -0.12em);
+}
+
+.soc-button:hover {
+	background: var(--green);
+	color: white !important;
+}
+
+
+
+
+.title {
+	font-family: var(--titles);
+	font-size: 150%;
+	color: var(--green);
+}
+
+.subtext {
+	position: absolute;
+	font-size: 50%;
+	font-weight: bold;
+	left: 25%;
+	right: 25%;
+	transform: translate(0,-16%);
+}
+
+
+
+.footer {
+	display: flex;
+}
+
+.footer-text {
+	font-family: var(--titles);
+	letter-spacing: 0.15em;
+	color: var(--grey);
+	font-size: 120%;
+	text-align: center;
+}
+
+.footer-spacer {
+	margin-bottom: 15%;
+}
+
+
+
+
+
+
+
+
+
