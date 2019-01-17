@@ -13,13 +13,16 @@ class Demo extends Component {
 			<Fader>
 				<p className="title">Live Demo</p>
 				<p>
-					The following demo is in its early stages of development. As
+					The following demo is still under active development. As
 					such, it currently does not support mobile devices and may
-					exhibit unexpected behaviour in browsers other than Chrome.
+					exhibit unexpected behaviour in some browsers.
 				</p>
 				<button
 					className="def-button green-button"
-					onClick={this.props.setMode.bind(this, "demo")}>
+					onClick={() => window.open(
+						"https://demo.podium-network.com",
+						"_blank"
+					)}>
 					<span className="fa fa-rocket" aria-hidden="true"></span> continue
 				</button>
 				<button
